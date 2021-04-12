@@ -1,10 +1,10 @@
 <template>
   <div class="view view-home">
-    <h1>
+    <title-box>
       <em>Vue + Huevos</em>
       <br/>
-      Vuevos 🤠
-    </h1>
+      🥚 Vuevos 🥚
+    </title-box>
     <p>This project describes how to make a fried egg
       across various rendering Web APIs.</p>
     <p>It uses Vue framework to navigate from one concept to another.
@@ -19,11 +19,13 @@
 
 <script>
 import ImageGallery from '../components/ImageGallery.vue';
+import TitleBox from '../components/TitleBox.vue';
 
 export default {
   name: 'Vuevos',
   components: {
     'image-gallery': ImageGallery,
+    'title-box': TitleBox
   },
   data: () => ({
     images: [
@@ -63,20 +65,27 @@ export default {
 </script>
 
 <style lang="scss">
+
 .view.view-home {
   min-height: 50vh;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  padding: 2rem 1rem;
+  margin: 0 0rem 2rem;
+  padding: 4rem 1rem 0rem;
   .image-gallery {
     margin: 2rem auto;
+  }
+  .splash-blur-bg {
+    filter: blur(30px);
   }
   h1 {
     font-weight: 600;
     font-size: 2rem;
-    margin: 0 2rem 2rem;
+    margin: 0;
+    padding: 1rem 2rem;
+    position: relative;
     em {
       font-size: 1.6rem;
       opacity: 0.8;

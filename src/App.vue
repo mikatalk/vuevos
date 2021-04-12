@@ -2,7 +2,7 @@
   <div id="vuevos">
     <nav-bar v-if="$route.path != '/'" />
     <router-view/>
-    <nav-bar v-if="$route.path != '/'" />
+    <nav-bar class="footer" />
   </div>
 </template>
 
@@ -18,18 +18,30 @@ export default {
 
 <style lang="scss">
 $code-font-size: 0.8rem;
+$max-width: 760px;
 html,
-body,
-#vuevos {
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 20px;
   font-family: apple-system, BlinkMacSystemFont, SegoeUI, Roboto, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin: 0 0.5rem;
-  padding: 0;
+  background: url(/header-bg-transparent.png) repeat-x center top transparent;
+  // background: url(/header-bg.png) repeat-x center top transparent;
+}
+html {
+  background: url(/footer-bg.png) repeat-x center bottom transparent;
+}
+#vuevos {
+  margin: 0 10px;
+  padding: 0 10px;
   font-size: 20px;
-  max-width: 900px;
+  max-width: $max-width;
   margin: 0 auto;
   p {
     margin: 2rem 0;
@@ -60,7 +72,7 @@ body,
     border-radius: 1rem;
     text-align: left;
     padding: 1rem;
-    max-width: 900px;
+    max-width: $max-width;
     margin: 2rem auto;
     display: flex;
     justify-content: flex-start;
@@ -87,6 +99,29 @@ body,
     height: $size;
     margin: 0 auto;
   }
+  .nav-bar.footer {
+    margin: 60px 0 160px;
+  }
+
+  // .splash-blur {
+  //   position: relative;
+  //   z-index: 0;
+  //   .splash-blur-bg {
+  //     z-index: 1;
+  //     display: block;
+  //     position: absolute;
+  //     background: white;
+  //     filter: blur(25px);
+  //     top: 0;
+  //     right: 0;
+  //     bottom: 0;
+  //     left: 0;
+  //   }
+  //   .splash-blur-content {
+  //     z-index: 2;
+  //     position: relative;
+  //   }
+  // }
 }
 
 

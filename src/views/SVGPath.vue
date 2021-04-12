@@ -1,6 +1,6 @@
 <template>
   <div class="view view-svg">
-    <h1>Create a Fried Egg using SVG Paths</h1>
+    <title-box>Create a Fried Egg using SVG Paths</title-box>
     <section class="square-container">
       <egg-svg-path /> 
     </section>
@@ -112,11 +112,15 @@ etc...</code></pre>
 <script>
 import snippet1 from 'raw-loader!./../tutorials-snippets/svg-path-1.html'
 import EggSVGPath from './../eggs/EggSVGPath.vue';
+import TitleBox from './../components/TitleBox.vue';
 import { highlightSVG, highlightJS  } from './../utils/prism.js';
 
 export default {
   name: 'ViewSVG',
-  components: { 'egg-svg-path': EggSVGPath },
+  components: {
+    'egg-svg-path': EggSVGPath,
+    'title-box': TitleBox
+  },
   data: () => ({ snippet1 }),
   methods: { highlightSVG, highlightJS }
 };
