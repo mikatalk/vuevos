@@ -2,8 +2,9 @@
 
 cd ./dist
 cp -r ../.git .git
-gco -b releases
+git branch -d releases
+git checkout -b releases
 git add .
 git commit -m "Deployment"
-git push origin releases
+git push origin releases --force
 cd -
