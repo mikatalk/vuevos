@@ -1,6 +1,6 @@
 <template>
   <div class="view view-css">
-    <h1>Make an Egg in HTML/CSS</h1>
+    <title-box>Make an Egg in HTML/CSS</title-box>
     
     <section class="square-container">
       <egg-css />
@@ -83,6 +83,7 @@ import EggCSS from './../eggs/EggCSS';
 import snippetCSS1 from 'raw-loader!./../tutorials-snippets/css-1.html'
 import snippetCSS2 from 'raw-loader!./../tutorials-snippets/css-2.html'
 import { highlightCSS, highlightJS } from './../utils/prism.js';
+import TitleBox from './../components/TitleBox.vue';
 
 export default {
   name: 'CSS',
@@ -91,7 +92,8 @@ export default {
     snippetCSS2,
   }),
   components: {
-    'egg-css': EggCSS
+    'egg-css': EggCSS,
+    'title-box': TitleBox
   },
   methods: {
     highlightCSS,

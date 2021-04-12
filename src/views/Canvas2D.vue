@@ -1,6 +1,6 @@
 <template>
   <div class="view view-canvas-2d">
-    <h1>Make an Egg using Canvas 2D API</h1>
+    <title-box>Make an Egg using Canvas 2D API</title-box>
 
     <section class="square-container">
       <egg-canvas-2d /> 
@@ -22,10 +22,14 @@
 import snippet1 from 'raw-loader!./../tutorials-snippets/svg-path-1.html'
 import EggCanvas2D from './../eggs/EggCanvas2D.vue';
 import { highlightJS } from './../utils/prism.js';
+import TitleBox from './../components/TitleBox.vue';
 
 export default {
   name: 'ViewSVG',
-  components: { 'egg-canvas-2d': EggCanvas2D },
+  components: {
+    'egg-canvas-2d': EggCanvas2D,
+    'title-box': TitleBox
+  },
   data: () => ({ snippet1 }),
   methods: { highlightJS }
 };

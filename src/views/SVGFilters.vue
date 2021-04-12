@@ -1,6 +1,6 @@
 <template>
   <div class="view view-svg-filters">
-    <h1>Fry an Egg with SVG Filters</h1>
+    <title-box>Fry an Egg with SVG Filters</title-box>
     
     <section class="square-container">
       <egg-svg-filters /> 
@@ -21,10 +21,14 @@
 import snippet1 from 'raw-loader!./../tutorials-snippets/svg-path-1.html'
 import EggSVGFilters from './../eggs/EggSVGFilters.vue';
 import { highlightSVG } from './../utils/prism.js';
+import TitleBox from './../components/TitleBox.vue';
 
 export default {
   name: 'ViewSVG',
-  components: { 'egg-svg-filters': EggSVGFilters },
+  components: {
+    'egg-svg-filters': EggSVGFilters,
+    'title-box': TitleBox
+  },
   data: () => ({ snippet1 }),
   methods: { highlightSVG }
 };

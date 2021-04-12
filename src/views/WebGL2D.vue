@@ -1,7 +1,8 @@
 <template>
   <div class="view view-webgl-2d">
-    <h1>Make an Egg using WebGL 2D</h1>
-    <h2>And signed distance functions</h2>
+    <title-box>Make an Egg using WebGL 2D
+    <em>And signed distance functions</em>
+    </title-box>
     <section class="square-container">
       <egg-webgl-2d /> 
     </section>
@@ -21,10 +22,14 @@
 import snippet1 from 'raw-loader!./../tutorials-snippets/svg-path-1.html'
 import EggWebGL2D from './../eggs/EggWebGL2D.vue';
 import { highlightJS } from './../utils/prism.js';
+import TitleBox from './../components/TitleBox.vue';
 
 export default {
   name: 'WebGL2D',
-  components: { 'egg-webgl-2d': EggWebGL2D },
+  components: {
+    'egg-webgl-2d': EggWebGL2D,
+    'title-box': TitleBox
+  },
   data: () => ({ snippet1 }),
   methods: { highlightJS }
 };

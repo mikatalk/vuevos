@@ -1,7 +1,8 @@
 <template>
   <div class="view view-webgl-3d">
-    <h1>Make an Egg using WebGL 3D</h1>
-    <h2>And signed distance functions</h2>
+    <title-box>Make an Egg using WebGL 3D
+      <em>And primitive geometries</em>
+    </title-box> 
     <section class="square-container">
       <egg-webgl-3d /> 
     </section>
@@ -21,10 +22,14 @@
 import snippet1 from 'raw-loader!./../tutorials-snippets/svg-path-1.html'
 import EggWebGL3D from './../eggs/EggWebGL3D.vue';
 import { highlightJS } from './../utils/prism.js';
+import TitleBox from './../components/TitleBox.vue';
 
 export default {
   name: 'WebGL3D',
-  components: { 'egg-webgl-3d': EggWebGL3D },
+  components: {
+    'egg-webgl-3d': EggWebGL3D,
+    'title-box': TitleBox
+  },
   data: () => ({ snippet1 }),
   methods: { highlightJS }
 };
