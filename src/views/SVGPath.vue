@@ -11,8 +11,10 @@
     </p>
 
     <p>
-    SVGs are great for responsive design elements as vector graphics
-    can scale and adapt to a wider range of resolutions which is a great asset when you deal with
+    SVGs are great for responsive design elements. Trying zooming in and see how the lines remain sharp! 
+    That's because it uses Vector graphics and
+    can scale to a wider range of resolutions.
+    And that is definitely a great asset when you deal with
     different client devices and screen sizes.
     </p>
     
