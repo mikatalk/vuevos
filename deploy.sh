@@ -1,10 +1,15 @@
 #!/bin/sh
 
 cd ./dist
-cp -r ../.git .git
-git branch -d gh-pages
+mkdir tmp
+cp -r ../.git tmp/.git
+cd tmp
 git checkout -b gh-pages
+git pull origin gh-pages
+cd ..
+cp -r tmp/.git .git
+rm -rf tmp
 git add .
 git commit -m "Deployment"
 git push origin gh-pages --force
-cd -
+cd ..

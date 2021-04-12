@@ -64,12 +64,12 @@
       </p>
       <p>
         You can access the 
-        <a href="https://github.com/mikatalk/vuevos/blob/main/src/eggs/EggCSS.vue">
+        <a class="link" href="https://github.com/mikatalk/vuevos/blob/main/src/eggs/EggCSS.vue">
         full code here</a>
       </p>
       <p>
         Or checkout the next experiment where we look into the 
-        <router-link to="/svg-path">
+        <router-link class="link" to="/svg-path">
         SVG path API
         </router-link>.
       </p>

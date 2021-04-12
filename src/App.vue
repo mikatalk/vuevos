@@ -17,6 +17,7 @@ export default {
 </script>
 
 <style lang="scss">
+$code-font-size: 0.8rem;
 html,
 body,
 #vuevos {
@@ -25,19 +26,20 @@ body,
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin: 0;
+  margin: 0 0.5rem;
   padding: 0;
   font-size: 20px;
   max-width: 900px;
   margin: 0 auto;
   p {
-    margin: 2rem;
+    margin: 2rem 0;
     font-size: 1rem;
     line-height: 1.4;
   }
 
   a.link {
     color: deeppink;
+    display: inline-block;
   }
   a.btn {
     color: deeppink;
@@ -58,12 +60,13 @@ body,
     border-radius: 1rem;
     text-align: left;
     padding: 1rem;
-    max-width: 800px;
-    margin: 2rem;
+    max-width: 900px;
+    margin: 2rem auto;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     overflow-x: auto;
+    font-size: $code-font-size;
     code {
       display: block;
     }
@@ -74,6 +77,7 @@ body,
     border-radius: 10px;
     padding: 0rem 0.5rem;
     border: 1px solid deeppink;
+    font-size: $code-font-size;
   }
 
   .square-container {

@@ -79,7 +79,7 @@ etc...</code></pre>
       
     <p>
       For more information regarding the path element and the meaning of the 
-      <span class="code" v-html="highlightSVG('d')"></span> attribute,
+      <span class="code" v-html="highlightJS('d')"></span> attribute,
       refer to the
       <a class="link" href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths">
         MDN Path documentation</a>.
@@ -92,7 +92,7 @@ etc...</code></pre>
 
     <p>
       SVG are also easy to integrate with templating syntaxes and HTML. Check out the
-      <a href="https://github.com/mikatalk/vuevos/blob/main/src/eggs/EggSVGPath.vue">
+      <a class="link" href="https://github.com/mikatalk/vuevos/blob/main/src/eggs/EggSVGPath.vue">
       full example code here</a>
     </p>
 
@@ -100,7 +100,7 @@ etc...</code></pre>
       If you were not already familiar with SVG, you should by now get 
       a pretty good idea of its potential. On the next chapter we will 
       explore how to make an egg with this time a more advanced SVG feature: 
-      <router-link to="/svg-filters">
+      <router-link class="link" to="/svg-filters">
       SVG filters
       </router-link>.
     </p>
@@ -112,13 +112,13 @@ etc...</code></pre>
 <script>
 import snippet1 from 'raw-loader!./../tutorials-snippets/svg-path-1.html'
 import EggSVGPath from './../eggs/EggSVGPath.vue';
-import { highlightSVG } from './../utils/prism.js';
+import { highlightSVG, highlightJS  } from './../utils/prism.js';
 
 export default {
   name: 'ViewSVG',
   components: { 'egg-svg-path': EggSVGPath },
   data: () => ({ snippet1 }),
-  methods: { highlightSVG }
+  methods: { highlightSVG, highlightJS }
 };
 </script>
 
