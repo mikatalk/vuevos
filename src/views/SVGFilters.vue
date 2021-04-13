@@ -27,17 +27,17 @@
 
     <p>
       In the previous chapter we used a
-      <span class="code" v-html="highlightSVG('circle')"></span> element.
+      <c>circle</c> element.
       for the yolk and a custom 
-       <span class="code" v-html="highlightSVG('path')"></span> and
-       for the egg white.
+      <c>path</c> and
+      for the egg white.
       This time we're using two circles, but instead
       we alter the shape of the egg white using a displacement filter.
     </p>
 
     <p>
       The first step is to define the filter in the 
-      <span class="code" v-html="highlightSVG('defs')"></span> 
+      <c>defs</c> 
       section of the SVG. This is where we define elements, patterns and filters 
       ahead of time. We can later reffer to and reuse them multiple times.
     </p>
@@ -45,7 +45,7 @@
     <p>One thing to keep in mind is that these definitions 
       are global to the HTML DOM.
       This means that if one SVG defines 
-      <span class="code" v-html="highlightSVG('defs')"></span> 
+      <c>defs</c> 
       any other SVG in the page has access to it.
     </p>
 
@@ -54,15 +54,15 @@
       patterns on multiple SVGs at once, but it can also create 
       issues when id names clash with one another. For this reason it's
       important to always use unique and specific
-      <span class="code" v-html="highlightSVG('id')"></span> 
+      <c>id</c> 
       attributes.
     </p>
 
     <p>
       Try chainging the fractal noise turbulence and frequency in  
-      <span class="code" v-html="highlightSVG('<feTurbulence />')"></span> 
+      <c>feTurbulence</c> 
       or the scale of
-      <span class="code" v-html="highlightSVG('<feDisplacementMap />')"></span>.
+      <c>feDisplacementMap</c>.
       You're one step away from making an omelette!
     </p>
 
@@ -100,12 +100,14 @@ import snippet1 from 'raw-loader!./../tutorials-snippets/svg-filters.html'
 import EggSVGFilters from './../eggs/EggSVGFilters.vue';
 import { highlightSVG } from './../utils/prism.js';
 import TitleBox from './../components/TitleBox.vue';
+import Code from './../components/Code.vue';
 
 export default {
   name: 'ViewSVG',
   components: {
     'egg-svg-filters': EggSVGFilters,
-    'title-box': TitleBox
+    'title-box': TitleBox,
+    'c': Code
   },
   data: () => ({ snippet1 }),
   methods: { highlightSVG }

@@ -39,15 +39,26 @@
     </p>
 
     <p>
-      You may think it's an odd way to overcomplicate graphics rendering for a 2D output,
+      You may think it's an odd way to overcomplicate 
+      graphics rendering for a 2D output,
       and you would probably be right. 
     </p>
 
     <p>
       But let's look at it from this perspective:
-      A quad is two triangles. If you can draw on triangles you can draw on anything in 3D.
-      This is a great way to get started with WebGL by putting aside some of the complexity 
-      of 3D and OpenGL in general while getting comfortable with using its shader language GLSL. 
+      A quad is two triangles. If you can draw on triangles 
+      you can draw on anything in 3D.
+      This is a great way to get started with WebGL by 
+      putting aside some of the complexity 
+      of 3D while getting comfortable with using its 
+      shader language GLSL. 
+    </p>
+
+    <p>
+      With that said let's jump in the code and set up 
+      a Three JS 2d scene using the OrthographicCamera. 
+      <c>THREE.OrthographicCamera</c>
+      because it allows us to define our own shaders.
     </p>
 
     <pre>
@@ -73,7 +84,7 @@ scene.add(mesh);`)">
     <p>
       Note that the quad mesh is composed of a Plane geometry and a Shader material.
       We use
-      <span class="code" v-html="highlightJS('THREE.ShaderMaterial')"></span> because it allows us to define our own shaders.
+      <c>THREE.ShaderMaterial</c> because it allows us to define our own shaders.
     </p>
 
     <p>
@@ -149,10 +160,10 @@ void main()  {
     </pre>
 
     <p>Fragment shaders output is defined by the 
-      <span class="code" v-html="highlightJS('main')"></span> 
+      <c>main</c> 
       function which role is to set the RGBA (red, green, blue, alpha) values of the pixel 
       inside a variable called
-      <span class="code" v-html="highlightJS('gl_FragColor')"></span>.
+      <c>gl_FragColor</c>.
     </p>
     
     <section class="square-container">
@@ -175,7 +186,7 @@ void main()  {
     <p>
       As we took a detour to look into a very specific use of WebGL, let's next
       continue frying eggs in 
-      <router-link class="link" to="/canvas-3d">
+      <router-link class="link" to="/webgl-3d">
       3D using WebGL
       </router-link>.
     </p>
@@ -195,12 +206,14 @@ import snippet1 from 'raw-loader!./../tutorials-snippets/svg-path-1.html'
 import EggWebGL2D from './../eggs/EggWebGL2D.vue';
 import { highlightJS } from './../utils/prism.js';
 import TitleBox from './../components/TitleBox.vue';
+import Code from './../components/Code.vue';
 
 export default {
   name: 'WebGL2D',
   components: {
     'egg-webgl-2d': EggWebGL2D,
-    'title-box': TitleBox
+    'title-box': TitleBox,
+    'c': Code
   },
   data: () => ({ snippet1 }),
   methods: { highlightJS }

@@ -8,7 +8,7 @@
     </section>
     
     <section>
-      <h3>Coming soon</h3>
+      <c>Coming soon</c>
     </section>
 
     <section class="square-container">
@@ -31,12 +31,14 @@ import snippet1 from 'raw-loader!./../tutorials-snippets/svg-path-1.html'
 import EggWebGL3D from './../eggs/EggWebGL3D.vue';
 import { highlightJS } from './../utils/prism.js';
 import TitleBox from './../components/TitleBox.vue';
+import Code from './../components/Code.vue';
 
 export default {
   name: 'WebGL3D',
   components: {
     'egg-webgl-3d': EggWebGL3D,
-    'title-box': TitleBox
+    'title-box': TitleBox,
+    'c': Code
   },
   data: () => ({ snippet1 }),
   methods: { highlightJS }

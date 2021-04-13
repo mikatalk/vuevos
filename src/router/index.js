@@ -11,6 +11,10 @@ const routes = [
     component: Home,
   },
   {
+    path: '*',
+    redirect: '/',
+  },
+  {
     path: '/html-css',
     name: 'CSS',
     component: () => import(/* webpackChunkName: "css" */ '../views/CSS.vue'),

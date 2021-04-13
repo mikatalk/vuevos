@@ -31,7 +31,7 @@
 
       <p> 
         We first set the width and height of each containers, then we use the
-        <span class="code" v-html="highlightCSS('border-radius: 50%')"></span> 
+        <c>border-radius: 50%</c> 
         property to round the corners and make it more like a circle shape.
       </p>
       <p>
@@ -43,7 +43,7 @@
         Be aware that it is not exactly valid CSS syntax.
         Instead it uses SCSS (Sassy CSS) formatting which
         enables features such as code nesting, mixins, variables and even built-in utilities such as 
-        <span class="code" v-html="highlightCSS('random(n)')"></span> 
+        <c>random(n)</c> 
         which we use here to make the egg a bit different every time we process the SCSS into CSS 
         using our favorite tools.
       </p>
@@ -89,6 +89,7 @@ import snippetCSS1 from 'raw-loader!./../tutorials-snippets/css-1.html'
 import snippetCSS2 from 'raw-loader!./../tutorials-snippets/css-2.html'
 import { highlightCSS, highlightJS } from './../utils/prism.js';
 import TitleBox from './../components/TitleBox.vue';
+import Code from './../components/Code.vue';
 
 export default {
   name: 'CSS',
@@ -98,7 +99,8 @@ export default {
   }),
   components: {
     'egg-css': EggCSS,
-    'title-box': TitleBox
+    'title-box': TitleBox,
+    'c': Code
   },
   methods: {
     highlightCSS,

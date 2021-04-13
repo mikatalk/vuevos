@@ -22,8 +22,8 @@
     <p>
       One great advantage of using SVG is the control over 
       the reponsive behavior. It is defined using 
-      <span class="code" v-html="highlightSVG('viewbox')"></span> and
-      <span class="code" v-html="highlightSVG('aspect-ratio')"></span>
+      <c>viewbox</c> and
+      <c>aspect-ratio</c>
       attributes. Learn more about it 
       <a class="link" href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/preserveAspectRatio">
         here</a>.
@@ -53,14 +53,14 @@
       Let's start adding elements, the easiest parts are the 
       background and the egg yolk.
       We use the built-in 
-      <span class="code" v-html="highlightSVG('rect')"></span> and
-      <span class="code" v-html="highlightSVG('circle')"></span> elements.
+      <c>rect</c> and
+      <c>circle</c> elements.
     </p>
 
     <p>
       Drawing the egg white however requires a less primitive shape.
       For that level of customization we use the  
-      <span class="code" v-html="highlightSVG('path')"></span> element
+      <c>path</c> element
       which allows us greater control over the shape.
     </p>
     
@@ -81,7 +81,7 @@ etc...</code></pre>
       
     <p>
       For more information regarding the path element and the meaning of the 
-      <span class="code" v-html="highlightJS('d')"></span> attribute,
+      <c>d</c> attribute,
       refer to the
       <a class="link" href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths">
         MDN Path documentation</a>.
@@ -116,12 +116,14 @@ import snippet1 from 'raw-loader!./../tutorials-snippets/svg-path-1.html'
 import EggSVGPath from './../eggs/EggSVGPath.vue';
 import TitleBox from './../components/TitleBox.vue';
 import { highlightSVG, highlightJS  } from './../utils/prism.js';
+import Code from './../components/Code.vue';
 
 export default {
   name: 'ViewSVG',
   components: {
     'egg-svg-path': EggSVGPath,
-    'title-box': TitleBox
+    'title-box': TitleBox,
+    'c': Code
   },
   data: () => ({ snippet1 }),
   methods: { highlightSVG, highlightJS }

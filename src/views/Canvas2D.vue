@@ -14,7 +14,7 @@
     
     <p>
       For that we use the
-      <span class="code" v-html="highlightJS('<canvas />')"></span>
+      <c>canvas</c>
       element that exposes a 2D rendering engine to Javascript.
     </p>
 
@@ -63,7 +63,7 @@ canvas.height = size;`)">
 
     <p>
       This type of situation can be handled by checking the value of 
-      <span class="code" v-html="highlightJS('window.devicePixelRatio')"></span>.
+      <c>window.devicePixelRatio</c>.
       Now keep in mind the higher it is, the more pixel there are to render and
       it can quickly have an impact on performance. With great power comes great responsibility.
       Note how we define a scale ratio using 100 as a base, 
@@ -74,13 +74,13 @@ canvas.height = size;`)">
       The rest of the code is fairly straightforward. Each time we 
       want to make a draw operation, we set the main settings first: 
       <br/>
-      <span class="code" v-html="highlightJS('fillStyle')"></span> 
+      <c>fillStyle</c> 
        - background color, 
       <br/>
-      <span class="code" v-html="highlightJS('stroke')"></span> 
+      <c>stroke</c> 
        - border color,
       <br/>
-      <span class="code" v-html="highlightJS('lineWidth ')"></span> 
+      <c>lineWidth </c> 
        - border size etc...
        <br/>
       With these we can draw a pink rectangle for the background, 
@@ -181,12 +181,14 @@ import snippet1 from 'raw-loader!./../tutorials-snippets/canvas-2d-1.html'
 import EggCanvas2D from './../eggs/EggCanvas2D.vue';
 import { highlightJS } from './../utils/prism.js';
 import TitleBox from './../components/TitleBox.vue';
+import Code from './../components/Code.vue';
 
 export default {
   name: 'ViewSVG',
   components: {
     'egg-canvas-2d': EggCanvas2D,
-    'title-box': TitleBox
+    'title-box': TitleBox,
+    'c': Code
   },
   data: () => ({ snippet1 }),
   methods: { highlightJS }
