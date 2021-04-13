@@ -93,12 +93,6 @@ etc...</code></pre>
     </section>
 
     <p>
-      SVG are also easy to integrate with templating syntaxes and HTML. Check out the
-      <a class="link" href="https://github.com/mikatalk/vuevos/blob/main/src/eggs/EggSVGPath.vue">
-      full example code here</a>
-    </p>
-
-    <p>
       If you were not already familiar with SVG, you should by now get 
       a pretty good idea of its potential. On the next chapter we will 
       explore how to make an egg with this time a more advanced SVG feature: 
@@ -107,6 +101,12 @@ etc...</code></pre>
       </router-link>.
     </p>
 
+
+    <p>
+      <a class="btn" href="https://github.com/mikatalk/vuevos/blob/main/src/eggs/EggSVGPath.vue">
+      Get the code and contribute.
+      </a>
+    </p>
 
   </div>
 </template>

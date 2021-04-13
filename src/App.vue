@@ -57,6 +57,9 @@ html {
     color: deeppink;
     border: 2px solid deeppink;
     padding: 10px;
+    margin-top: 50px;
+    display: inline-block;
+    width: auto;
     text-decoration: none;
     background-color: white;
     font-weight: 600;

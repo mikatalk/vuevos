@@ -62,11 +62,11 @@
         Keep in mind this is more of a hack than a common technique 
         but it remains fun to explore.
       </p>
-      <p>
+      <!-- <p>
         You can access the 
         <a class="link" href="https://github.com/mikatalk/vuevos/blob/main/src/eggs/EggCSS.vue">
         full code here</a>
-      </p>
+      </p> -->
       <p>
         Or checkout the next experiment where we look into the 
         <router-link class="link" to="/svg-path">
@@ -74,6 +74,11 @@
         </router-link>.
       </p>
 
+      <p>
+        <a class="btn" href="https://github.com/mikatalk/vuevos/blob/main/src/eggs/EggCSS.vue">
+        Get the code and contribute.
+        </a>
+      </p>
     </section>
   </div>
 </template>

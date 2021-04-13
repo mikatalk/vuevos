@@ -84,6 +84,13 @@
       2D Canvas API
       </router-link>.
     </p>
+
+    <p>
+      <a class="btn" href="https://github.com/mikatalk/vuevos/blob/main/src/eggs/EggSVGFilters.vue">
+      Get the code and contribute.
+      </a>
+    </p>
+
   </div>
 </template>
 

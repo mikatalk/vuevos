@@ -164,6 +164,12 @@ context.stroke(path);`)">
       </router-link>
     </p>
 
+    <p>
+      <a class="btn" href="https://github.com/mikatalk/vuevos/blob/main/src/eggs/EggCanvas2D.vue">
+      Get the code and contribute.
+      </a>
+    </p>
+
   </div>
 </template>
 
