@@ -83,8 +83,8 @@ export default {
   h1 {
     font-weight: 600;
     font-size: 2rem;
-    margin: 0;
-    padding: 1rem 2rem;
+    margin: 0 auto 2rem;
+    padding: 2rem 2rem;
     position: relative;
     em {
       font-size: 1.6rem;

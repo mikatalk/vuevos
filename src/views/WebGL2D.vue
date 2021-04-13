@@ -1,7 +1,7 @@
 <template>
   <div class="view view-webgl-2d">
     <title-box>Make an Egg using WebGL 2D
-    <em>And signed distance functions</em>
+    <!-- <em>And signed distance functions</em> -->
     </title-box>
     <section class="square-container">
       <egg-webgl-2d /> 

@@ -1,7 +1,7 @@
 <template>
   <div class="view view-webgl-3d">
     <title-box>Make an Egg using WebGL 3D
-      <em>And primitive geometries</em>
+      <!-- <em>And primitive geometries</em> -->
     </title-box> 
     <section class="square-container">
       <egg-webgl-3d /> 

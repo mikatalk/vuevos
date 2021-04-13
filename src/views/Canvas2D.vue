@@ -82,6 +82,7 @@ canvas.height = size;`)">
       <br/>
       <span class="code" v-html="highlightJS('lineWidth ')"></span> 
        - border size etc...
+       <br/>
       With these we can draw a pink rectangle for the background, 
       and a yellow circle for the yolk.
     </p>
