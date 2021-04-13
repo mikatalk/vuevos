@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style lang="scss">
-$code-font-size: 0.8rem;
+$code-font-size: 0.9rem;
 $max-width: 760px;
 html,
 body {
@@ -89,7 +89,7 @@ html {
     border-radius: 10px;
     padding: 0rem 0.5rem;
     border: 1px solid deeppink;
-    font-size: $code-font-size;
+    // font-size: $code-font-size;
   }
 
   .square-container {

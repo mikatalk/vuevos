@@ -11,16 +11,17 @@
     </p>
 
     <p>
-    SVGs are great for responsive design elements. Trying zooming in and see how the lines remain sharp! 
-    That's because it uses Vector graphics and
-    can scale to a wider range of resolutions.
-    And that is definitely a great asset when you deal with
-    different client devices and screen sizes.
+    SVGs are great for responsive design elements. 
+    Try zooming in and see how the edges remain sharp! 
+    That's because vector graphics 
+    can scale to any resolutions.
+    And that is definitely a great asset when you have to support
+    different devices and screen sizes.
     </p>
     
     <p>
-      Without getting too deep into the topic, it is worth mentionning that SVG 
-      allow for all range of responsive behaviors defined by the 
+      One great advantage of using SVG is the control over 
+      the reponsive behavior. It is defined using 
       <span class="code" v-html="highlightSVG('viewbox')"></span> and
       <span class="code" v-html="highlightSVG('aspect-ratio')"></span>
       attributes. Learn more about it 
@@ -39,17 +40,18 @@
     </pre>
 
     <p>
-      First thing we define a view box that allows us to work with a defined
-      viewport unit of 100 by 100. 
+      First thing we defined a viewbox that allows us to work with a defined
+      viewport of 100 by 100 units. 
     </p>
     <p>
-      We can later rely on these units 
-      without worrying about the size the SVG file is rendered at.
-      That's pretty convenient if you ask me!
+      We can later rely on these units when placing elements 
+      and the SVG automagically scales everything accordingly. 
+      Pretty convenient indeed!
     </p>
 
     <p>
-      The easiest parts are the background and the egg yolk.
+      Let's start adding elements, the easiest parts are the 
+      background and the egg yolk.
       We use the built-in 
       <span class="code" v-html="highlightSVG('rect')"></span> and
       <span class="code" v-html="highlightSVG('circle')"></span> elements.
