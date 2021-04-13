@@ -29,11 +29,11 @@ export default {
     const material = new THREE.ShaderMaterial( {
       uniforms: uniforms,
       vertexShader: `
-			varying vec2 vUv;
-			void main()	{
-				vUv = uv;
-				gl_Position = vec4( position, 1.0 );
-			}
+      varying vec2 vUv;
+      void main()  {
+        vUv = uv;
+        gl_Position = vec4(position, 1.0);
+      }
       `,
       fragmentShader: `
       varying vec2 vUv;
@@ -47,7 +47,7 @@ export default {
         return step(length(coord), radius);
       }
 
-			void main()	{
+      void main()  {
         vec3 pink = vec3(1, 0.41, 0.71);
         vec3 white = vec3(1,1,1);
         vec3 yellow = vec3(1,0.84,0);
@@ -71,7 +71,7 @@ export default {
           color = yellow;
         }
         gl_FragColor = vec4(color, 1.0);
-			}
+      }
 
       `
     } );

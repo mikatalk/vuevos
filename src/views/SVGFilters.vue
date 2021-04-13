@@ -8,7 +8,7 @@
     
     <p>
       In this chapter we take a look into
-      another great feature of SVG.
+      another great feature of SVGs.
       Filters in SVG are similar to the CSS API
       but with a XML syntax instead.
     </p>
@@ -38,8 +38,8 @@
     <p>
       The first step is to define the filter in the 
       <span class="code" v-html="highlightSVG('defs')"></span> 
-      section of the SVG. This is where we define ahead of time elements,
-      patterns and filters that we can later reffer to and reuse multiple times.
+      section of the SVG. This is where we define elements, patterns and filters 
+      ahead of time. We can later reffer to and reuse them multiple times.
     </p>
 
     <p>One thing to keep in mind is that these definitions 
@@ -52,8 +52,8 @@
     <p>
       It can be useful if you want to update all the 
       patterns on multiple SVGs at once, but it can also create 
-      issues when id names clash one with another. For this reason it's
-      important to always use unique 
+      issues when id names clash with one another. For this reason it's
+      important to always use unique and specific
       <span class="code" v-html="highlightSVG('id')"></span> 
       attributes.
     </p>
