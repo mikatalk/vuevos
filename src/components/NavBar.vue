@@ -3,13 +3,20 @@
     <div class="splash-blur-back">
     </div>
     <div class="links">
-      <router-link to="/">
-        <vuevos-icon :width="30" :height="30"/>
-      </router-link>
-      <br/>
-      <router-link to="/">
-        Home
-      </router-link> |
+      <span v-if="showLogo">
+        <router-link to="/">
+          <vuevos-icon :width="30" :height="30"/>
+        </router-link>
+        <br/>
+        <router-link to="/">
+          Home
+        </router-link> |
+      </span>
+      <span v-else>
+        <router-link to="/">
+          <vuevos-icon :width="30" :height="30"/>
+        </router-link> |
+      </span>
       <router-link to="/html-css">CSS</router-link> |
       <router-link to="/svg-path">SVG Path</router-link> |
       <router-link to="/svg-filters">SVG Filters</router-link> |
@@ -26,10 +33,14 @@ import VuevosIcon from './VuevosIcon.vue';
 export default {
   name: 'NavBar',
   props: {
-    items: {
-      type: Array,
-      default: () => ([]),
-    },
+    // items: {
+    //   type: Array,
+    //   default: () => ([]),
+    // },
+    showLogo: {
+      type: Boolean,
+      default: true
+    }
   },
   components: {
     'vuevos-icon': VuevosIcon

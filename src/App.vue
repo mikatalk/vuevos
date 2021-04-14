@@ -1,6 +1,6 @@
 <template>
   <div id="vuevos">
-    <nav-bar v-if="$route.path != '/'" />
+    <nav-bar v-if="$route.path != '/'" :show-logo="false" />
     <router-view/>
     <footer>
       <nav-bar />
