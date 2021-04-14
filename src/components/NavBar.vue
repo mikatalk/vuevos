@@ -5,19 +5,11 @@
     <div class="links">
       <router-link to="/">
         <vuevos-icon :width="30" :height="30"/>
-        <!-- Home -->
-        <!-- <svg width="16px" height="16px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-          <title>Vuevos.com</title>
-          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-            <g>
-              <rect fill="#FF69B4" x="0" y="0" width="44" height="44" rx="11"></rect>
-              <path d="M22.5,26.6780822 L32.4790419,9 L39,9 L22.5,38 L6,9 L12.5209581,9 L22.5,26.6780822 Z" fill="#FBF0F0"></path>
-              <path d="M33,9 L22.5,28 L12,9 L19.5,9 L23,16 L26.5,9 L33,9 Z" fill="#FFD700"></path>
-            </g>
-          </g>
-        </svg> -->
-      </router-link> 
+      </router-link>
       <br/>
+      <router-link to="/">
+        Home
+      </router-link> |
       <router-link to="/html-css">CSS</router-link> |
       <router-link to="/svg-path">SVG Path</router-link> |
       <router-link to="/svg-filters">SVG Filters</router-link> |

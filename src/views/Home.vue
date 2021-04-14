@@ -103,6 +103,9 @@ export default {
       justify-content: center;
       align-items: center;
       vertical-align: middle;
+      svg {
+        width: 80px;
+      }
     }
   }
 }
