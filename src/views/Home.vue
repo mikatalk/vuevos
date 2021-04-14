@@ -1,9 +1,14 @@
 <template>
   <div class="view view-home">
     <title-box>
+      <br/>
       <em>Vue + Huevos</em>
       <br/>
-      🥚 Vuevos 🥚
+      <span class="centered-vertically">
+        <vuevos-icon/>
+        Vuevos 
+        <vuevos-icon/>
+      </span>
     </title-box>
     <p>This project describes how to make a fried egg
       across various rendering Web APIs.</p>
@@ -20,11 +25,13 @@
 <script>
 import ImageGallery from '../components/ImageGallery.vue';
 import TitleBox from '../components/TitleBox.vue';
+import VuevosIcon from '../components/VuevosIcon.vue';
 
 export default {
   name: 'Vuevos',
   components: {
     'image-gallery': ImageGallery,
+    'vuevos-icon': VuevosIcon,
     'title-box': TitleBox
   },
   data: () => ({
@@ -90,6 +97,12 @@ export default {
       font-size: 1.6rem;
       opacity: 0.8;
       font-weight: 100;
+    }
+    .centered-vertically {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      vertical-align: middle;
     }
   }
 }
