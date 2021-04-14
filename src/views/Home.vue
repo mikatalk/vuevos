@@ -1,7 +1,6 @@
 <template>
   <div class="view view-home">
     <title-box>
-      <br/>
       <em>Vue + Huevos</em>
       <br/>
       <span class="centered-vertically">
