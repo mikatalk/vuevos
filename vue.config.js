@@ -6,13 +6,13 @@ module.exports = {
   filenameHashing: false,
 
   pluginOptions: {
+    baseUrl: '/',
     prerenderSpa: {
-      registry: undefined,
       renderRoutes: [
         '/'
       ],
       useRenderEvent: false,
-      renderAfterTime: 5000,
+      renderAfterTime: 2500,
       headless: true,
       onlyProduction: true,
       postProcess: route => {
