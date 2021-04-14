@@ -48,7 +48,7 @@ export default {
         link: '/svg-path',
       },
       {
-        title: 'SVG Filter',
+        title: 'SVG Filters',
         url: '/thumbnails/egg-svg-filters.png',
         link: '/svg-filters',
       },
