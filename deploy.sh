@@ -5,7 +5,7 @@ mkdir tmp
 mkdir tmp/.git
 cp -r ../.git tmp/.git
 cd tmp
-git checkout -b gh-pages
+git checkout gh-pages
 cd ..
 cp -r tmp/.git .git
 rm -rf tmp
