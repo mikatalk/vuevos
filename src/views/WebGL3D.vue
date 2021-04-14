@@ -7,14 +7,94 @@
       <egg-webgl-3d /> 
     </section>
     
-    <section>
-      <c>Coming soon</c>
-    </section>
+    <p>
+      As we are getting to the end of our egg frying journey.
+      It's time to top it off with some 3D!
+    </p>
+
+    <p>
+      As we did in the previous chapter
+      <router-link class="link" to="/canvas-2d">
+      WebGL 2D
+      </router-link>
+      we are going to use <c>Three.js</c> once again.
+      Once again we create a scene with a pink background color.
+      Then we add a camera, except this time we use <c>THREE.PerspectiveCamera</c>.
+    </p>
+    <p>
+      What this means in short is that when using the <c>Orthographic</c> camera, 
+      objects appear smaller as they get farther from the camera.
+    </p>
+
+    <pre>
+      <code v-html="highlightJS(`const camera = new THREE.PerspectiveCamera(20, 1, 1, 10000);
+camera.position.y = 140;
+camera.position.z = 200;
+camera.lookAt(scene.position);
+
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0xff69b4);
+`)">
+      </code>
+    </pre>
+
+    <p>
+      Let's keep it simple and use the 
+      Three built-in primitive geometries (circle and sphere).
+      First the egg white using a <c>CircleGeometry</c>. <br/>
+      By default the circle is facing vertically so we rotate it 90°
+      along the x axis so that it is aligned with the floor.
+    </p>
+
+ <pre>
+      <code v-html="highlightJS(`const eggWhite = new THREE.Mesh(
+  new THREE.CircleGeometry(30, 40),
+  new THREE.MeshBasicMaterial({ color: 0xffffff })
+);
+eggWhite.rotation.x = -Math.PI/2;
+scene.add(eggWhite);`)">
+      </code>
+    </pre>
+
+    <p>
+      Next the yolk is created using the  <c>SphereGeometry</c>. <br/>
+      Add a basic material with a yellow color and add the
+      mesh to the scene.
+
+ <pre>
+      <code v-html="highlightJS(`const eggYolk = new THREE.Mesh(
+  new THREE.SphereGeometry(10, 32, 32),
+  new THREE.MeshBasicMaterial({ color: 0xffd700 })
+);
+scene.add(eggYolk);`)">
+      </code>
+    </pre>
+    
+    <p>
+      Your egg is ready for the kitchen.
+      In the last step we create a renderer and call <c>renderer.render(scene, camera)</c>.
+    </p>
+
+    <pre>
+      <code v-html="highlightJS(`const renderer = new THREE.WebGLRenderer({ canvas });
+renderer.setPixelRatio(window.devicePixelRatio);
+renderer.render(scene, camera);`)">
+      </code>
+    </pre>
+
+    <p>
+      Look! The egg is sizzling! Yummy!
+    </p>
 
     <section class="square-container">
       <egg-webgl-3d /> 
     </section>
 
+    <p>
+      And this conclude our series of little gourmet experiments.
+      I hope you enjoyed the adventure and that it will help you
+      in deciding what pipeline to use in different situations.
+    </p>
 
     <p>
       <a class="btn" href="https://github.com/mikatalk/vuevos/blob/main/src/eggs/EggWebGL3D.vue">
