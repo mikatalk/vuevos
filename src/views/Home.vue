@@ -10,15 +10,17 @@
         <vuevos-icon/>
       </span>
     </title-box>
-    <p>This project describes how to make a fried egg
-      across various rendering Web APIs.</p>
-    <p>It uses Vue framework to navigate from one concept to another.
-      Each fried egg (and its code) is encapsulated and available 
-      in its own component.</p>
-    <image-gallery :images="images" />
-    <p>
-      <a class="btn" href="http://github.com/mikatalk/vuevos">Get the code and contribute.</a>
-    </p>
+    <section class="content">
+      <p>This project describes how to make a fried egg
+        across various rendering Web APIs.</p>
+      <p>It uses Vue framework to navigate from one concept to another.
+        Each fried egg (and its code) is encapsulated and available 
+        in its own component.</p>
+      <image-gallery :images="images" />
+      <p>
+        <a class="btn" href="http://github.com/mikatalk/vuevos">Get the code and contribute.</a>
+      </p>
+    </section>
   </div>
 </template>
 
@@ -81,6 +83,9 @@ export default {
   flex-direction: column;
   margin: 0 0rem 2rem;
   padding: 4rem 1rem 0rem;
+  .content {
+    background: white;
+  }
   .image-gallery {
     margin: 2rem auto;
   }
