@@ -3,13 +3,27 @@ module.exports = {
   // ? 'https://vuevos.com/'
   // : `/`,
 
+  // pages: {
+  //   index: {
+  //     entry: 'main.js'
+  //   },
+  //   // 'html-css': {
+  //   //   entry: 'main.js'
+  //   // }
+  // },
   filenameHashing: false,
 
   pluginOptions: {
     baseUrl: '/',
     prerenderSpa: {
       renderRoutes: [
-        '/'
+        '/',
+        '/html-css',
+        '/svg-path',
+        '/svg-filter',
+        '/canvas-2d',
+        '/webgl-2d',
+        '/webgl-3d',
       ],
       useRenderEvent: false,
       renderAfterTime: 2500,
