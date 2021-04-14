@@ -2,7 +2,13 @@
   <div id="vuevos">
     <nav-bar v-if="$route.path != '/'" />
     <router-view/>
-    <nav-bar class="footer" />
+    <footer>
+      <nav-bar />
+      <p class="copyright">
+        Copyright © {{getYear}} 
+        <a href="https://www.michael-iriarte.com/">@michael_iriarte</a>
+      </p>
+      </footer>
   </div>
 </template>
 
@@ -12,6 +18,11 @@ export default {
   name: 'App',
   components: {
     'nav-bar': NavBar
+  },
+  computed: {
+    getYear () {
+      return new Date().getFullYear();
+    }
   }
 };
 </script>
@@ -102,29 +113,26 @@ html {
     height: $size;
     margin: 0 auto;
   }
-  .nav-bar.footer {
-    margin: 60px 0 160px;
-  }
 
-  // .splash-blur {
-  //   position: relative;
-  //   z-index: 0;
-  //   .splash-blur-bg {
-  //     z-index: 1;
-  //     display: block;
-  //     position: absolute;
-  //     background: white;
-  //     filter: blur(25px);
-  //     top: 0;
-  //     right: 0;
-  //     bottom: 0;
-  //     left: 0;
-  //   }
-  //   .splash-blur-content {
-  //     z-index: 2;
-  //     position: relative;
-  //   }
-  // }
+  footer {
+    .nav-bar {
+      margin: 60px 0 160px;
+    }
+    .copyright {
+      color: #2c3e50;
+      margin: 0;
+      padding: 5px 0;
+      font-size: 0.6rem;
+      font-weight: 500;
+      a {
+        font-size: 0.75rem;
+        color: deeppink;
+        text-decoration: none;
+        padding: 0 10px;
+        display: block;
+      }
+    }
+  }
 }
 
 
