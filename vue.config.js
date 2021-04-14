@@ -20,7 +20,7 @@ module.exports = {
         '/',
         '/html-css',
         '/svg-path',
-        '/svg-filter',
+        '/svg-filters',
         '/canvas-2d',
         '/webgl-2d',
         '/webgl-3d',
