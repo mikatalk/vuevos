@@ -21,6 +21,7 @@ export default {
   display: inline-block;
   border-radius: 10px;
   padding: 0rem 0.5rem;
+  line-height: 1.4;
   border: 1px solid deeppink;
 }
 </style>

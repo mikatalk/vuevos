@@ -56,8 +56,8 @@ html {
   margin: 0 auto;
   p {
     margin: 2rem 0;
-    font-size: 1rem;
-    line-height: 1.4;
+    font-size: 1.2rem;
+    line-height: 1.8;
   }
 
   a.link {

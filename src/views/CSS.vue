@@ -30,7 +30,7 @@
       </p>
 
       <p> 
-        We first set the width and height of each containers, then we use the
+        We first set the <c>width</c> and <c>height</c> of each containers, then we use the
         <c>border-radius: 50%</c> 
         property to round the corners and make it more like a circle shape.
       </p>
