@@ -1,5 +1,8 @@
 <template>
-  <svg class="vuevos-icon" :width="`${widht}px`" :height="`${height}px`" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <svg class="vuevos-icon"
+    :width="`${width}px`"
+    :height="`${height}px`"
+    viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Vuevos.com</title>
     <defs>
       <filter id="shadow">
