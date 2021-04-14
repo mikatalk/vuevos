@@ -12,6 +12,7 @@ module.exports = {
         '/'
       ],
       useRenderEvent: false,
+      renderAfterTime: 5000,
       headless: true,
       onlyProduction: true,
       postProcess: route => {
