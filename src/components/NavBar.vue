@@ -4,7 +4,9 @@
     </div>
     <div class="links">
       <router-link to="/">
-        <svg width="16px" height="16px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <vuevos-icon :width="30" :height="30"/>
+        <!-- Home -->
+        <!-- <svg width="16px" height="16px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <title>Vuevos.com</title>
           <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g>
@@ -13,8 +15,9 @@
               <path d="M33,9 L22.5,28 L12,9 L19.5,9 L23,16 L26.5,9 L33,9 Z" fill="#FFD700"></path>
             </g>
           </g>
-        </svg>
-      </router-link> |
+        </svg> -->
+      </router-link> 
+      <br/>
       <router-link to="/html-css">CSS</router-link> |
       <router-link to="/svg-path">SVG Path</router-link> |
       <router-link to="/svg-filters">SVG Filters</router-link> |
@@ -26,6 +29,8 @@
 </template>
 
 <script>
+import VuevosIcon from './VuevosIcon.vue';
+
 export default {
   name: 'NavBar',
   props: {
@@ -33,6 +38,9 @@ export default {
       type: Array,
       default: () => ([]),
     },
+  },
+  components: {
+    'vuevos-icon': VuevosIcon
   },
 };
 </script>
