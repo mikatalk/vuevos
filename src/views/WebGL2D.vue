@@ -172,7 +172,13 @@ void main()  {
 
 
     <p>
-      This is of course just the tip of the iceberg. If you want to learn more, I strongly recommend 
+      This is of course just the tip of the iceberg. 
+      It is in no way optimized and was simplidief for 
+      readability.
+    </p>
+
+    <p>
+      If you want to learn more on the topic, I strongly recommend 
       checking out the 
       <a class="link" href="https://thebookofshaders.com/">
         Book of Shaders
@@ -184,8 +190,8 @@ void main()  {
     </p>
 
     <p>
-      As we took a detour to look into a very specific use of WebGL, let's next
-      continue frying eggs in 
+      As we just took a detour to look into a very specific use of WebGL,
+      let's next continue frying eggs in 
       <router-link class="link" to="/webgl-3d">
       3D using WebGL
       </router-link>.

@@ -8,7 +8,6 @@ git checkout -b gh-pages
 cd ..
 cp -r tmp/.git .git
 rm -rf tmp
-echo "vuevos.com" > CNAME
 git add .
 git commit -m "Deployment"
 git push origin gh-pages --force
