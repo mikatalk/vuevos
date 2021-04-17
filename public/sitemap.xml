@@ -1,0 +1,67 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://vuevos.com</loc>
+    <image:image>
+      <image:loc>https://vuevos.com/social-wide.png</image:loc>
+      <image:caption>vuevos.com - Home page</image:caption>
+      <image:title>How to make a fried egg across various rendering Web APIs.</image:title>
+    </image:image>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://vuevos.com/html-css</loc>
+    <image:image>
+      <image:loc>https://vuevos.com/thumbnails/egg-css.png</image:loc>
+      <image:caption>vuevos.com - HTML and CSS</image:caption>
+      <image:title>Make an Egg in HTML/CSS</image:title>
+    </image:image>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://vuevos.com/svg-path</loc>
+    <image:image>
+      <image:loc>https://vuevos.com/thumbnails/egg-svg-path.png</image:loc>
+      <image:caption>vuevos.com - SVG Paths</image:caption>
+      <image:title>Create a Fried Egg using SVG Paths</image:title>
+    </image:image>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://vuevos.com/svg-filters</loc>
+    <image:image>
+      <image:loc>https://vuevos.com/thumbnails/egg-svg-filters.png</image:loc>
+      <image:caption>vuevos.com - SVG Filters</image:caption>
+      <image:title>Fry an Egg with SVG Filters</image:title>
+    </image:image>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://vuevos.com/canvas-2d</loc>
+    <image:image>
+      <image:loc>https://vuevos.com/thumbnails/egg-canvas-2d.png</image:loc>
+      <image:caption>vuevos.com - Canvas 2D</image:caption>
+      <image:title>Make an Egg using Canvas 2D API</image:title>
+    </image:image>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://vuevos.com/webgl-2d</loc>
+    <image:image>
+      <image:loc>https://vuevos.com/thumbnails/egg-webgl-2d.png</image:loc>
+      <image:caption>vuevos.com - WebGL 2D</image:caption>
+      <image:title>Make an Egg using WebGL 2D API</image:title>
+    </image:image>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://vuevos.com/webgl-3d</loc>
+    <image:image>
+      <image:loc>https://vuevos.com/thumbnails/egg-webgl-3d.png</image:loc>
+      <image:caption>vuevos.com - WebGL 3D</image:caption>
+      <image:title>Make an Egg using WebGL 3D API</image:title>
+    </image:image>
+    <priority>1.0</priority>
+  </url>
+</urlset>
