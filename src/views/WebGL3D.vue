@@ -17,13 +17,16 @@
       <router-link class="link" to="/canvas-2d">
       WebGL 2D
       </router-link>
-      we are going to use <c>Three.js</c> once again.
-      Once again we create a scene with a pink background color.
-      Then we add a camera, except this time we use <c>THREE.PerspectiveCamera</c>.
+      we are going to use <c>Three.js</c> and start
+      once again with creating a scene with a pink background color.
+      Then just like before we add a camera, except this time we use
+      <c>THREE.PerspectiveCamera</c>.
     </p>
     <p>
       What this means in short is that when using the <c>Orthographic</c> camera, 
-      objects appear smaller as they get farther from the camera.
+      objects appear smaller as they get farther from the camera. Similar to how
+      your eyes work in the real world.
+
     </p>
 
     <pre>
@@ -42,8 +45,8 @@ scene.background = new THREE.Color(0xff69b4);
       Let's keep it simple and use the 
       Three built-in primitive geometries (circle and sphere).
       First the egg white using a <c>CircleGeometry</c>. <br/>
-      By default the circle is facing vertically so we rotate it 90°
-      along the x axis so that it is aligned with the floor.
+      By default the circle is facing vertically so we rotate it 90° (or half of PI in radians)
+      along the X axis so that it is aligned with the floor.
     </p>
 
  <pre>
