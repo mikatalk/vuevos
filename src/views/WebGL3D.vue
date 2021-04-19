@@ -42,10 +42,23 @@ scene.background = new THREE.Color(0xff69b4);
     </pre>
 
     <p>
-      Let's keep it simple and use the 
+      With our scene and camera set up, let's keep things simple
+      here and use the 
       Three built-in primitive geometries (circle and sphere).
-      First the egg white using a <c>CircleGeometry</c>. <br/>
-      By default the circle is facing vertically so we rotate it 90° (or half of PI in radians)
+    </p>
+
+    <p>
+      Of course we could open up Blender and try modelling a more 
+      realistic looking egg geometry, add textures, lights, 
+      environment maps and shadows but that would go beyond the scope
+      of this article.
+    </p>
+
+    <p>
+      So for now we can create the egg white using a simple
+      <c>CircleGeometry</c>. <br/>
+      By default the circle is facing vertically so we rotate it 90°
+      (or half of PI in radians)
       along the X axis so that it is aligned with the floor.
     </p>
 
@@ -74,8 +87,9 @@ scene.add(eggYolk);`)">
     </pre>
     
     <p>
-      Your egg is ready for the kitchen.
-      In the last step we create a renderer and call <c>renderer.render(scene, camera)</c>.
+      Your egg is now ready for the kitchen.
+      In the last step we create a renderer 
+      and call <c>renderer.render(scene, camera)</c>.
     </p>
 
     <pre>
